@@ -1,0 +1,93 @@
+[0.028][INFO]:      ChromeDriver 26.0.1383.0 C:\Users\vaibhav\workspace\Module21_Framework\drivers\chromedriver.exe
+[1.174][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.switches": [  ],
+   "chromeOptions": {
+      "args": [  ],
+      "extensions": [  ]
+   },
+   "platform": "ANY",
+   "version": ""
+}
+
+[1.192][INFO]:      Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --enable-logging --log-level=1 --ignore-certificate-errors about:blank
+[4.915][INFO]:      Connected to Chrome successfully. Version: 27.0.1453.94
+[5.102][FINE]:      Command received (/session/10d7c2ff20103850ced20f16425d9831)
+[5.103][FINE]:      Command finished (/session/10d7c2ff20103850ced20f16425d9831) with response {
+   "sessionId": "10d7c2ff20103850ced20f16425d9831",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "26.0.1383.0",
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "27.0.1453.94",
+      "webStorageEnabled": true
+   }
+}
+
+[5.644][FINE]:      Command received (/session/10d7c2ff20103850ced20f16425d9831/window/current/maximize) with params {
+   "windowHandle": "current"
+}
+
+[5.644][FINER]:     Waiting for all views to stop loading...
+[5.644][FINER]:     Done waiting for all views to stop loading
+[5.704][FINER]:     Waiting for all views to stop loading...
+[5.704][FINER]:     Done waiting for all views to stop loading
+[5.705][FINE]:      Command finished (/session/10d7c2ff20103850ced20f16425d9831/window/current/maximize) with response {
+   "sessionId": "10d7c2ff20103850ced20f16425d9831",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[5.718][FINE]:      Command received (/session/10d7c2ff20103850ced20f16425d9831/timeouts/implicit_wait) with params {
+   "ms": 10000
+}
+
+[5.718][FINER]:     Waiting for all views to stop loading...
+[5.719][FINER]:     Done waiting for all views to stop loading
+[5.719][FINER]:     Waiting for all views to stop loading...
+[5.720][FINER]:     Done waiting for all views to stop loading
+[5.720][FINE]:      Command finished (/session/10d7c2ff20103850ced20f16425d9831/timeouts/implicit_wait) with response {
+   "sessionId": "10d7c2ff20103850ced20f16425d9831",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[5.740][FINE]:      Command received (/session/10d7c2ff20103850ced20f16425d9831/url) with params {
+   "url": "http://www.salesforce.com"
+}
+
+[5.740][FINER]:     Waiting for all views to stop loading...
+[5.741][FINER]:     Done waiting for all views to stop loading
+[7.646][FINER]:     Waiting for all views to stop loading...
+[7.729][FINER]:     Done waiting for all views to stop loading
+[7.729][WARNING]:   AfterExecuteCommand failed: Chrome did not respond to 'WaitForAllTabsToStopLoading'. Elapsed time was 3 ms.
+[7.729][FINE]:      Command finished (/session/10d7c2ff20103850ced20f16425d9831/url) with response {
+   "sessionId": "10d7c2ff20103850ced20f16425d9831",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[7.793][FINE]:      Command received (/session/10d7c2ff20103850ced20f16425d9831/element) with params {
+   "using": "xpath",
+   "value": "//ul[@class='horizontal']/li[1]/span/span/span/a[text()='Solutions']"
+}
+
+[7.793][FINER]:     Waiting for all views to stop loading...

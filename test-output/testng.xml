@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Salesforce">
+
+<listeners>
+  <listener class-name="com.qtpselenium.util.TestsListenerAdapter" /> 
+  </listeners>
+
+<test name="Login">
+    <classes>
+        <class name="com.qtpselenium.salesforce.testcases.LoginTest" ></class>  
+    </classes>
+</test>
+
+<test name="CreateLead">
+    <classes>
+        <class name="com.qtpselenium.salesforce.testcases.CreateLead" ></class>  
+    </classes>
+</test>
+
+<test name="MenuTest">
+    <classes>
+        <class name="com.qtpselenium.salesforce.testcases.MenuTest" ></class>  
+    </classes>
+</test>
+
+</suite>

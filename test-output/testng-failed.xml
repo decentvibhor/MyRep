@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Salesforce]">
+  <listeners>
+    <listener class-name="com.qtpselenium.util.TestsListenerAdapter"/>
+  </listeners>
+  <test name="Login(failed)">
+    <classes>
+      <class name="com.qtpselenium.salesforce.testcases.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="doLogin" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.qtpselenium.salesforce.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Login(failed) -->
+  <test name="CreateLead(failed)">
+    <classes>
+      <class name="com.qtpselenium.salesforce.testcases.CreateLead">
+        <methods>
+          <include name="createLead" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.salesforce.testcases.CreateLead -->
+      <class name="com.qtpselenium.salesforce.testcases.LoginTest">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qtpselenium.salesforce.testcases.LoginTest -->
+    </classes>
+  </test> <!-- CreateLead(failed) -->
+  <test name="MenuTest(failed)">
+    <classes>
+      <class name="com.qtpselenium.salesforce.testcases.LoginTest">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qtpselenium.salesforce.testcases.LoginTest -->
+      <class name="com.qtpselenium.salesforce.testcases.MenuTest">
+        <methods>
+          <include name="topMenuTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.salesforce.testcases.MenuTest -->
+    </classes>
+  </test> <!-- MenuTest(failed) -->
+</suite> <!-- Failed suite [Salesforce] -->

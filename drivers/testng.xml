@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Sample Suite">
+
+<test name="Menu Test">
+    <classes>
+        <class name="com.qtpselenium.salesforce.testcases.MenuTest" ></class>  
+    </classes>
+</test>
+
+<test name="Login Test">
+    <classes>
+        <class name="com.qtpselenium.salesforce.testcases.LoginTest" ></class>  
+    </classes>
+</test>
+
+<test name="Create Lead Test">
+    <classes>
+        <class name="com.qtpselenium.salesforce.testcases.CreateLead" ></class>  
+    </classes>
+</test>
+
+
+
+
+</suite>

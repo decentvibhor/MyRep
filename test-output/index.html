@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Salesforce">
+              <span class="suite-name border-failed">Salesforce</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Salesforce">
+                    <span>F:\Module21_Framework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Salesforce">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Salesforce">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Salesforce">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Salesforce">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Salesforce">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Salesforce">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,  7 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Salesforce" class="hide-methods failed suite-Salesforce"> (hide)</a> <!-- hide-methods failed suite-Salesforce -->
+                      <a href="#" panel-name="suite-Salesforce" class="show-methods failed suite-Salesforce"> (show)</a> <!-- show-methods failed suite-Salesforce -->
+                    </span>
+                    <div class="method-list-content failed suite-Salesforce">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesforce" title="com.qtpselenium.salesforce.testcases.LoginTest" hash-for-method="doLogin({Username=admin, Password=admin, Runmode=Y, Flag=Y, Browser=Mozilla})">doLogin({Username=admin, Password=admin, Runmode=Y, Flag=Y, Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Salesforce -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Salesforce" class="hide-methods skipped suite-Salesforce"> (hide)</a> <!-- hide-methods skipped suite-Salesforce -->
+                      <a href="#" panel-name="suite-Salesforce" class="show-methods skipped suite-Salesforce"> (show)</a> <!-- show-methods skipped suite-Salesforce -->
+                    </span>
+                    <div class="method-list-content skipped suite-Salesforce">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesforce" title="com.qtpselenium.salesforce.testcases.CreateLead" hash-for-method="createLead({Status=Qualified, FirstName=Vibhor, LastName=Agarwal, Title=Mr., Runmode=Y, Browser=Chrome, Company...)">createLead({Status=Qualified, FirstName=Vibhor, LastName=Agarwal, Title=Mr., Runmode=Y, Browser=Chrome, Company...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesforce" title="com.qtpselenium.salesforce.testcases.CreateLead" hash-for-method="createLead({Status=Qualified, FirstName=Barrack, LastName=Obama, Title=Mr., Runmode=Y, Browser=Mozilla, Company...)">createLead({Status=Qualified, FirstName=Barrack, LastName=Obama, Title=Mr., Runmode=Y, Browser=Mozilla, Company...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesforce" title="com.qtpselenium.salesforce.testcases.LoginTest" hash-for-method="doLogin({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Chrome})">doLogin({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesforce" title="com.qtpselenium.salesforce.testcases.LoginTest" hash-for-method="doLogin({Username=U1, Password=P1, Runmode=N, Flag=N, Browser=Chrome})">doLogin({Username=U1, Password=P1, Runmode=N, Flag=N, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesforce" title="com.qtpselenium.salesforce.testcases.LoginTest" hash-for-method="doLogin({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Mozilla})">doLogin({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesforce" title="com.qtpselenium.salesforce.testcases.MenuTest" hash-for-method="topMenuTest({Runmode=Y, Browser=Mozilla})">topMenuTest({Runmode=Y, Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Salesforce" title="com.qtpselenium.salesforce.testcases.MenuTest" hash-for-method="topMenuTest({Runmode=N, Browser=Chrome})">topMenuTest({Runmode=N, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Salesforce -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Salesforce" class="panel Salesforce">
+          <div class="suite-Salesforce-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qtpselenium.salesforce.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=admin, Password=admin, Runmode=Y, Flag=Y, Browser=Mozilla})">
+                  </a> <!-- doLogin({Username=admin, Password=admin, Runmode=Y, Flag=Y, Browser=Mozilla}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=admin, Password=admin, Runmode=Y, Flag=Y, Browser=Mozilla})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ync provider shutdown done
+System JS : ERROR resource://gre/components/nsSearchService.js:269 - NS_ERROR_ILLEGAL_VALUE: SRCH_SVC_moveEngine: Index out of bounds!
+1410030700315	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1410030700317	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1410030700320	addons.xpi	DEBUG	startup
+1410030700321	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1410030700321	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1410030700322	addons.xpi	INFO	Mapping {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} to C:\Program Files\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1410030700323	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1410030700324	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Vibhor\AppData\Local\Temp\anonymous6518398692703482865webdriver-profile\extensions\fxdriver@googlecode.com
+1410030700324	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Vibhor\AppData\Local\Temp\anonymous6518398692703482865webdriver-profile\extensions\webdriver-staging
+1410030700324	addons.xpi	DEBUG	checkForChanges
+1410030700340	addons.xpi	DEBUG	No changes found
+1410030700345	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1410030700346	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1410030700354	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.3.16540.9015
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+console.error: skype_ff_extension: 
+  DEPRECATED: The widget module is deprecated.  Please consider using the sdk/ui module instead.
+Traceback (most recent call last):
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 114, in startup/&lt;
+    run(options);
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 170, in run
+    let program = main(options.loader, options.main);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 645, in main
+    return loader.load(loader, module).exports;
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://skype_ff_extension-at-jetpack/skype_ff_extension/lib/main.js&quot;, line 14, in null
+    var widgets = require(&quot;sdk/widget&quot;);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 619, in require
+    freeze(load(loader, module));
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://gre/modules/commonjs/sdk/widget.js&quot;, line 60, in null
+    &quot;The widget module is deprecated.  &quot; +
+  File &quot;resource://gre/modules/commonjs/sdk/util/deprecate.js&quot;, line 18, in deprecateUsage
+    let stack = get().slice(2);
+System JS : ERROR resource://gre/components/nsSearchService.js:269 - NS_ERROR_ILLEGAL_VALUE: SRCH_SVC_moveEngine: Index out of bounds!
+JavaScript error: resource://skype_ff_extension-at-jetpack/skype_ff_extension/data/c2c_options_menu_localization.js, line 189: document.getElementById(...) is null
+
+Build info: version: &apos;2.38.0&apos;, revision: &apos;bd32d4e&apos;, time: &apos;2013-12-05 16:16:40&apos;
+System info: host: &apos;PC&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:197)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.qtpselenium.util.Keywords.openBrowser(Keywords.java:135)
+	at com.qtpselenium.util.Keywords.executeKeywords(Keywords.java:69)
+	at com.qtpselenium.salesforce.testcases.LoginTest.doLogin(LoginTest.java:38)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ync provider shutdown done
+System JS : ERROR resource://gre/components/nsSearchService.js:269 - NS_ERROR_ILLEGAL_VALUE: SRCH_SVC_moveEngine: Index out of bounds!
+1410030700315	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1410030700317	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1410030700320	addons.xpi	DEBUG	startup
+1410030700321	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1410030700321	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1410030700322	addons.xpi	INFO	Mapping {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} to C:\Program Files\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1410030700323	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1410030700324	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Vibhor\AppData\Local\Temp\anonymous6518398692703482865webdriver-profile\extensions\fxdriver@googlecode.com
+1410030700324	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Vibhor\AppData\Local\Temp\anonymous6518398692703482865webdriver-profile\extensions\webdriver-staging
+1410030700324	addons.xpi	DEBUG	checkForChanges
+1410030700340	addons.xpi	DEBUG	No changes found
+1410030700345	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1410030700346	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1410030700354	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.3.16540.9015
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+console.error: skype_ff_extension: 
+  DEPRECATED: The widget module is deprecated.  Please consider using the sdk/ui module instead.
+Traceback (most recent call last):
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 114, in startup/&lt;
+    run(options);
+  File &quot;resource://gre/modules/commonjs/sdk/addon/runner.js&quot;, line 170, in run
+    let program = main(options.loader, options.main);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 645, in main
+    return loader.load(loader, module).exports;
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://skype_ff_extension-at-jetpack/skype_ff_extension/lib/main.js&quot;, line 14, in null
+    var widgets = require(&quot;sdk/widget&quot;);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 619, in require
+    freeze(load(loader, module));
+  File &quot;resource://gre/modules/commonjs/sdk/loader/cuddlefish.js&quot;, line 129, in CuddlefishLoader/options&lt;.load
+    result = load(loader, module);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 299, in load
+    evaluate(sandbox, module.uri);
+  File &quot;resource://gre/modules/commonjs/toolkit/loader.js&quot;, line 262, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File &quot;resource://gre/modules/commonjs/sdk/widget.js&quot;, line 60, in null
+    &quot;The widget module is deprecated.  &quot; +
+  File &quot;resource://gre/modules/commonjs/sdk/util/deprecate.js&quot;, line 18, in deprecateUsage
+    let stack = get().slice(2);
+System JS : ERROR resource://gre/components/nsSearchService.js:269 - NS_ERROR_ILLEGAL_VALUE: SRCH_SVC_moveEngine: Index out of bounds!
+JavaScript error: resource://skype_ff_extension-at-jetpack/skype_ff_extension/data/c2c_options_menu_localization.js, line 189: document.getElementById(...) is null
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 32 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Salesforce-class-failed -->
+          <div class="suite-Salesforce-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.salesforce.testcases.CreateLead</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createLead({Status=Qualified, FirstName=Vibhor, LastName=Agarwal, Title=Mr., Runmode=Y, Browser=Chrome, Company...)">
+                  </a> <!-- createLead({Status=Qualified, FirstName=Vibhor, LastName=Agarwal, Title=Mr., Runmode=Y, Browser=Chrome, Company...) -->
+                  <span class="method-name">createLead</span>
+                  <span class="parameters">({Status=Qualified, FirstName=Vibhor, LastName=Agarwal, Title=Mr., Runmode=Y, Browser=Chrome, Company=USA})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping Test as Runmode is No
+	at com.qtpselenium.salesforce.testcases.CreateLead.createLead(CreateLead.java:25)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createLead({Status=Qualified, FirstName=Barrack, LastName=Obama, Title=Mr., Runmode=Y, Browser=Mozilla, Company...)">
+                  </a> <!-- createLead({Status=Qualified, FirstName=Barrack, LastName=Obama, Title=Mr., Runmode=Y, Browser=Mozilla, Company...) -->
+                  <span class="method-name">createLead</span>
+                  <span class="parameters">({Status=Qualified, FirstName=Barrack, LastName=Obama, Title=Mr., Runmode=Y, Browser=Mozilla, Company=USA})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping Test as Runmode is No
+	at com.qtpselenium.salesforce.testcases.CreateLead.createLead(CreateLead.java:25)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Salesforce-class-skipped -->
+          <div class="suite-Salesforce-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.salesforce.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Chrome})">
+                  </a> <!-- doLogin({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Chrome}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping as flag is N
+	at com.qtpselenium.salesforce.testcases.LoginTest.doLogin(LoginTest.java:36)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=U1, Password=P1, Runmode=N, Flag=N, Browser=Chrome})">
+                  </a> <!-- doLogin({Username=U1, Password=P1, Runmode=N, Flag=N, Browser=Chrome}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=U1, Password=P1, Runmode=N, Flag=N, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping as flag is N
+	at com.qtpselenium.salesforce.testcases.LoginTest.doLogin(LoginTest.java:36)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Mozilla})">
+                  </a> <!-- doLogin({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Mozilla}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Mozilla})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping as flag is N
+	at com.qtpselenium.salesforce.testcases.LoginTest.doLogin(LoginTest.java:36)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Salesforce-class-skipped -->
+          <div class="suite-Salesforce-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.salesforce.testcases.MenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="topMenuTest({Runmode=Y, Browser=Mozilla})">
+                  </a> <!-- topMenuTest({Runmode=Y, Browser=Mozilla}) -->
+                  <span class="method-name">topMenuTest</span>
+                  <span class="parameters">({Runmode=Y, Browser=Mozilla})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping Test as Runmode is No
+	at com.qtpselenium.salesforce.testcases.MenuTest.topMenuTest(MenuTest.java:23)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="topMenuTest({Runmode=N, Browser=Chrome})">
+                  </a> <!-- topMenuTest({Runmode=N, Browser=Chrome}) -->
+                  <span class="method-name">topMenuTest</span>
+                  <span class="parameters">({Runmode=N, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping Test as Runmode is No
+	at com.qtpselenium.salesforce.testcases.MenuTest.topMenuTest(MenuTest.java:23)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Salesforce-class-skipped -->
+        </div> <!-- panel Salesforce -->
+        <div panel-name="test-xml-Salesforce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\Module21_Framework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Salesforce&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qtpselenium.util.TestsListenerAdapter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Login&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.salesforce.testcases.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login --&gt;
+  &lt;test name=&quot;CreateLead&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.salesforce.testcases.CreateLead&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CreateLead --&gt;
+  &lt;test name=&quot;MenuTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.salesforce.testcases.MenuTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MenuTest --&gt;
+&lt;/suite&gt; &lt;!-- Salesforce --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Salesforce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Salesforce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CreateLead (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">MenuTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Salesforce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Salesforce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Salesforce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Salesforce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Salesforce');
+function tableData_Salesforce() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'doLogin')
+data.setCell(0, 2, 'com.qtpselenium.salesforce.testcases.LoginTest')
+data.setCell(0, 3, 65610);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'doLogin')
+data.setCell(1, 2, 'com.qtpselenium.salesforce.testcases.LoginTest')
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'doLogin')
+data.setCell(2, 2, 'com.qtpselenium.salesforce.testcases.LoginTest')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'doLogin')
+data.setCell(3, 2, 'com.qtpselenium.salesforce.testcases.LoginTest')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createLead')
+data.setCell(4, 2, 'com.qtpselenium.salesforce.testcases.CreateLead')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'topMenuTest')
+data.setCell(5, 2, 'com.qtpselenium.salesforce.testcases.MenuTest')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'topMenuTest')
+data.setCell(6, 2, 'com.qtpselenium.salesforce.testcases.MenuTest')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createLead')
+data.setCell(7, 2, 'com.qtpselenium.salesforce.testcases.CreateLead')
+data.setCell(7, 3, 0);
+window.suiteTableData['Salesforce']= { tableData: data, tableDiv: 'times-div-Salesforce'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Salesforce">
+              </div> <!-- times-div-Salesforce -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Salesforce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Salesforce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Salesforce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Salesforce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.salesforce.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">doLogin({Username=admin, Password=admin, Runmode=Y, Flag=Y, Browser=Mozilla})</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doLogin({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Mozilla})</span>
+                <span class="method-start">65613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doLogin({Username=U1, Password=P1, Runmode=N, Flag=N, Browser=Chrome})</span>
+                <span class="method-start">65614 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doLogin({Username=decentvibhor@gmail.com, Password=plasma123, Runmode=N, Flag=Y, Browser=Chrome})</span>
+                <span class="method-start">65616 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">65621 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.salesforce.testcases.CreateLead</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createLead({Status=Qualified, FirstName=Barrack, LastName=Obama, Title=Mr., Runmode=Y, Browser=Mozilla, Company...)</span>
+                <span class="method-start">65810 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createLead({Status=Qualified, FirstName=Vibhor, LastName=Agarwal, Title=Mr., Runmode=Y, Browser=Chrome, Company...)</span>
+                <span class="method-start">65810 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.salesforce.testcases.MenuTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">topMenuTest({Runmode=Y, Browser=Mozilla})</span>
+                <span class="method-start">65818 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">topMenuTest({Runmode=N, Browser=Chrome})</span>
+                <span class="method-start">65819 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
